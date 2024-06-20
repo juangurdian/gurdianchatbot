@@ -24,12 +24,12 @@ if "selected_session" not in st.session_state:
 # Sidebar
 with st.sidebar:
     st.markdown("# About")
-    st.markdown("This is a conversational chatbot interface powered by OpenAI's GPT-3.5 model. It allows you to have interactive conversations and get helpful responses.")
+    st.markdown("This is a conversational chatbot interface powered by OpenAI's GPT-3.5 and GPT-4 model. It allows you to have interactive conversations and get helpful responses, remembers your conversation, and has the ability to hold multiple chats.")
     st.markdown("---")
     # Let user select version
     st.write("Choose ChatGPT version:")
-    version = st.selectbox("Choose ChatGPT version", ("3.5", "4.5"))
-    if version == "3.5":
+    version = st.selectbox("Choose ChatGPT version", ("GPT-3.5-Turbo", "GPT-4"))
+    if version == "GPT-3.5-turbo":
         # Use GPT-3.5 model
         MODEL = "gpt-3.5-turbo"
     else:
