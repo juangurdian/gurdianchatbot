@@ -25,7 +25,7 @@ This project is a conversational chatbot interface powered by OpenAI's GPT-3.5 a
 
 1. **Clone the Repository**:
     ```sh
-    git clone <repository_url>
+    git clone <https://github.com/juangurdian/gurdianchatbot>
     cd <repository_directory>
     ```
 
